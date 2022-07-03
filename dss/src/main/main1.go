@@ -68,6 +68,9 @@ func main() {
 		Block_device: block_device,
 	})
 	log.Println("新建server没问题")
+
+	log.Println(lis)
+	//启动服务这里存在问题好像
 	//启动服务
 	if err := s.Serve(lis); err != nil {
 		log.Fatalf("failed to serve: %v", err)
