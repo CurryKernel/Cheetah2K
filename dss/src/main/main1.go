@@ -60,15 +60,18 @@ func main() {
 	if err != nil {
 		log.Fatal("Failed to listen: %v", bitstore.TempPort)
 	}
+	log.Println("监听ip和断口没问题")
 	//新建一个server
 	s := grpc.NewServer()
 	//初始化server
 	bitstore.RegisterBitStoreServer(s, &bitstore.BitStoreService{
 		Block_device: block_device,
 	})
+	log.Println("新建server没问题")
 	//启动服务
 	if err := s.Serve(lis); err != nil {
 		log.Fatalf("failed to serve: %v", err)
 	}
+	log.Println("开始启动服务")
 	log.Println("SUCCESS start service at %v", bitstore.TempPort)
 }
