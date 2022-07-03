@@ -54,7 +54,7 @@ func main() {
 		log.Fatal("OPEN_DEVICE_FAILE %v\n", conf.Block_device)
 		return
 	}
-
+	log.Println("打开设备没问题")
 	//设置监听ip和端口
 	lis, err := net.Listen("tcp", bitstore.TempPort)
 	if err != nil {
