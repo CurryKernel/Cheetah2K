@@ -412,6 +412,8 @@ func main() {
 	if err != nil {
 		grpclog.Fatalf("failed to listen: %v", err)
 	}
+	log.Println("Listen绑定失败，还未实例化grpc Server")
+
 	// 实例化grpc Server
 	s := grpc.NewServer()
 	// 注册metadataService
