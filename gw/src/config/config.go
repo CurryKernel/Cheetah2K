@@ -165,8 +165,8 @@ func SetRepDss() { //设置每个主DSS节点对应的副本节点
 func SetMMds2MDss() { //设置主Mds节点对应的主Dss节点
 	Mastermds2MasterDss = make(map[string][]string)
 	Mastermds2MasterDss[MasterMds[0]] = append(Mastermds2MasterDss[MasterMds[0]], MasterDss[0])
-	Mastermds2MasterDss[MasterMds[0]] = append(Mastermds2MasterDss[MasterMds[0]], MasterDss[1])
-	Mastermds2MasterDss[MasterMds[0]] = append(Mastermds2MasterDss[MasterMds[0]], MasterDss[2])
+	//Mastermds2MasterDss[MasterMds[0]] = append(Mastermds2MasterDss[MasterMds[0]], MasterDss[1])
+	//Mastermds2MasterDss[MasterMds[0]] = append(Mastermds2MasterDss[MasterMds[0]], MasterDss[2])
 
 	//Mastermds2MasterDss[MasterMds[0]] = append(Mastermds2MasterDss[MasterMds[0]],MasterDss[1])
 	//Mastermds2MasterDss[MasterMds[0]] = append(Mastermds2MasterDss[MasterMds[0]],MasterDss[2])
