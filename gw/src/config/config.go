@@ -101,9 +101,9 @@ var (
 	PartSize      uint64
 	MaxSize       uint64
 	Mds           string
-	MDSs          = []string{"100.81.128.73:4306"}
+	MDSs          = []string{"192.168.201.131:4306"}
 
-//	MDSs          =[]string{"192.168.9.106:4306"}
+	//	MDSs          =[]string{"192.168.9.106:4306"}
 )
 
 // disk map addr
