@@ -26,10 +26,10 @@ import (
 
 const (
 	// Address gRPC服务地址
-	Address = "100.81.128.73:4306"
+	Address = "0.0.0.0:4306"
 )
 const (
-	DB_PATH         = "/disk3/db_path"
+	DB_PATH         = "./db_path"
 	PREFIX_METADATA = "BLOBMD"
 )
 
