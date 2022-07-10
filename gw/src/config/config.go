@@ -121,7 +121,7 @@ var (
 var DiskAddrs = []string{"192.168.201.131:8084"}
 
 //var DiskAddrs = []string{"10.0.9.72"}
-var NumMasterDss = 3       //用来记录主dss的数量
+var NumMasterDss = 1       //用来记录主dss的数量
 var NumMasterMds = 1       //用来记录主mds的数量
 var DssReplicateFactor = 0 //用来记录dss的复制因子
 //var MdsReplicateFactor = 0 //用来记录mds的复制因子
