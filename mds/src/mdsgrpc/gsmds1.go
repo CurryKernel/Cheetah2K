@@ -26,7 +26,7 @@ import (
 
 const (
 	// Address gRPC服务地址
-	Address = "0.0.0.0:4306"
+	Address = "192.168.201.131:4306"
 )
 const (
 	DB_PATH         = "./db_path"
@@ -412,7 +412,7 @@ func main() {
 	if err != nil {
 		grpclog.Fatalf("failed to listen: %v", err)
 	}
-	log.Println("Listen绑定失败，还未实例化grpc Server")
+	//log.Println("Listen绑定失败，还未实例化grpc Server")
 
 	// 实例化grpc Server
 	s := grpc.NewServer()
