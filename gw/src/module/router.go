@@ -55,7 +55,7 @@ func init() {
 	startAllParam.partSize = startAllDescription.Flag.String("part_size", "16MiB", "part file size")
 	startAllParam.maxSize = startAllDescription.Flag.String("max_size", "5GiB", "max file size")
 	startAllParam.imageServer = startAllDescription.Flag.String("image_server", "127.0.0.1:8081", "image server address")
-	startAllParam.mds = startAllDescription.Flag.String("mds", "192.168.9.116:4306,192.168.9.115:4307", "mds server address")
+	startAllParam.mds = startAllDescription.Flag.String("mds", "192.168.201.131:4306,192.168.201.131:4307", "mds server address")
 	startAllParam.unit = startAllDescription.Flag.Int("unit", 8*1024, "allocate uint")
 }
 

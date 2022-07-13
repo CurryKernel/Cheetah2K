@@ -68,6 +68,9 @@ func capitalize(s string) string {
 	if s == "" {
 		return s
 	}
+	//s := "大家好"
+	//r, n = utf8.DecodeRuneInString(s[i:])解码 s 中的最后一个字符，返回解码后的字符，和 p 中被解码的字节数
+	//fmt.Printf("%c：%v   ", r, n) // 大：3   家：3   好：3
 	r, n := utf8.DecodeRuneInString(s)
 	return string(unicode.ToTitle(r)) + s[n:]
 }
